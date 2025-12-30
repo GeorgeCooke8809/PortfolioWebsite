@@ -20,15 +20,49 @@
                         <li class="navigation-item"><a href="portfolio.html" class="nav-button">Portfolio</a></li>
                         <li class="navigation-item"><a href="blog-overviews.html" class="nav-button">Blog</a></li>
                         <li class="navigation-item"><a href="contact.html" class="nav-button">Contact</a></li>
+                        <li class="show-side-bar-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                        <li class="hide-side-bar-button" onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
                     </ul>
                 </nav>
             </div>
             <hr>
         </header>
 
+        <nav class="side-bar-list">
+            <ul class="side-bar-navigation-list">
+                <li class="navigation-item-side"><a href="#" class="nav-button-current">Home</a></li>
+                <li class="navigation-item-side"><a href="portfolio.html" class="nav-button">Portfolio</a></li>
+                <li class="navigation-item-side"><a href="blog-overviews.html" class="nav-button">Blog</a></li>
+                <li class="navigation-item-side"><a href="contact.html" class="nav-button">Contact</a></li>
+            </ul>
+        </nav>
+
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.side-bar-navigation-list')
+                sidebar.style.display = 'flex'
+
+                const showButton = document.querySelector('.show-side-bar-button')
+                showButton.style.display = 'none'
+
+                const hideButton = document.querySelector('.hide-side-bar-button')
+                hideButton.style.display = 'flex'
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.side-bar-navigation-list')
+                sidebar.style.display = 'none'
+                
+                const showButton = document.querySelector('.show-side-bar-button')
+                showButton.style.display = 'flex'
+
+                const hideButton = document.querySelector('.hide-side-bar-button')
+                hideButton.style.display = 'none'
+            }
+        </script>
+
         <section>
             <div class="container">
-                <p>Hello, my name is George Cooke. I am a first year A-Level Computer Science (in addition to Maths and Economics) student studying in the UK. I am currently most experienced in Python but am looking to broaden my horizons with C# and HTML/CSS/Javascript.<br><br>This is where I will be posting my development portfolio going forward. I will confess this might as well be my first time using HTML so you will have to forgive me if it is a little rudimentary. Make sure to keep checking back to check on my progress! Feel free to reach out at any point at <a href = "mailto:george@georgecooke.uk" title="Email george@georgecooke.uk">George@GeorgeCooke.uk</a></p>
+                <p>Hello, my name is George Cooke. I am a first year A-Level Computer Science (in addition to Maths and Economics) student studying in the UK. I am currently most experienced in Python but am looking to broaden my horizons with C# and HTML/CSS/Javascript.<br><br>This is where I will be posting my development portfolio going forward. I will confess this might as well be my first time using HTML so you will have to forgive me if it is a little rudimentary. Make sure to keep checking back to check on my progress! Feel free to reach out at any point at <em>George@GeorgeCooke.uk</em></p>
             </div>
         </section>
 
