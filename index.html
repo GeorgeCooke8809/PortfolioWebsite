@@ -20,11 +20,45 @@
                         <li class="navigation-item"><a href="portfolio.html" class="nav-button">Portfolio</a></li>
                         <li class="navigation-item"><a href="blog-overviews.html" class="nav-button">Blog</a></li>
                         <li class="navigation-item"><a href="contact.html" class="nav-button">Contact</a></li>
+                        <li class="show-side-bar-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                        <li class="hide-side-bar-button" onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
                     </ul>
                 </nav>
             </div>
             <hr>
         </header>
+
+        <nav class="side-bar-list">
+            <ul class="side-bar-navigation-list">
+                <li class="navigation-item-side"><a href="#" class="nav-button-current">Home</a></li>
+                <li class="navigation-item-side"><a href="portfolio.html" class="nav-button">Portfolio</a></li>
+                <li class="navigation-item-side"><a href="blog-overviews.html" class="nav-button">Blog</a></li>
+                <li class="navigation-item-side"><a href="contact.html" class="nav-button">Contact</a></li>
+            </ul>
+        </nav>
+
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.side-bar-navigation-list')
+                sidebar.style.display = 'flex'
+
+                const showButton = document.querySelector('.show-side-bar-button')
+                showButton.style.display = 'none'
+
+                const hideButton = document.querySelector('.hide-side-bar-button')
+                hideButton.style.display = 'flex'
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.side-bar-navigation-list')
+                sidebar.style.display = 'none'
+                
+                const showButton = document.querySelector('.show-side-bar-button')
+                showButton.style.display = 'flex'
+
+                const hideButton = document.querySelector('.hide-side-bar-button')
+                hideButton.style.display = 'none'
+            }
+        </script>
 
         <section>
             <div class="container">
