@@ -19,6 +19,7 @@
 
 .overview-gallery-image{
     width: 100px;
+    margin: 20px 0px;
     border-radius: 1rem;
     flex-grow: 1;
 }
@@ -32,6 +33,35 @@
     justify-content: center;
     justify-items: center;
     padding-bottom: 20px;
+}
+
+.about-links{
+    padding: 0px;
+    padding-top: 20px;
+    list-style: none;
+    margin: 0px;
+    display: flex;
+    gap: 10px;
+}
+
+#overview-title{
+    margin: 0px;
+    margin-top: 20px;
+}
+
+#overview-body{
+    margin-bottom: 0px;
+}
+
+.about-links-item{
+    display: inline;
+    padding: 0px;
+    margin: 0px;
+}
+
+#overview-header{
+    display: flex;
+    justify-content: space-between;
 }
 
 @media only screen and (max-width: 950px) {
