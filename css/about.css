@@ -1,0 +1,58 @@
+#overview-div{
+    display: flex;
+}
+
+#overview-box{
+    background-color: #000b69;
+    color: #ffffff;
+    padding: 0px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-mug{
+    width: 30%;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    max-width: 300px;
+}
+
+.overview-gallery-image{
+    width: 100px;
+    border-radius: 1rem;
+    flex-grow: 1;
+}
+
+#overview-image-gallery{
+    width: 100%;
+    display: none;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    justify-items: center;
+    padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 950px) {
+    #overview-div{
+        display: inline;
+    }
+
+    #about-mug{
+        width: 100%;
+        max-width: none;
+        margin: auto;
+    }
+
+    #overview-box{
+        padding: 20px;
+        
+    }
+}
+
+@media only screen and (min-width: 1250px){
+    #overview-image-gallery{
+            display: flex;
+        }
+}
