@@ -1,5 +1,5 @@
 function showSidebar(){
-    const sidebar = document.querySelector('.side-bar-navigation-list')
+    const sidebar = document.querySelector('.side-bar-list')
     sidebar.style.display = 'flex'
 
     const showButton = document.querySelector('.show-side-bar-button')
@@ -9,7 +9,7 @@ function showSidebar(){
     hideButton.style.display = 'flex'
 }
 function hideSidebar(){
-    const sidebar = document.querySelector('.side-bar-navigation-list')
+    const sidebar = document.querySelector('.side-bar-list')
     sidebar.style.display = 'none'
     
     const showButton = document.querySelector('.show-side-bar-button')
@@ -21,7 +21,7 @@ function hideSidebar(){
 
 function checkSize(){
     var width = window.innerWidth;
-    if (width > 1106){
+    if (width > 1140){
         expand()
     }
     else{

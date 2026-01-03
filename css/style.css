@@ -1,8 +1,9 @@
 header{
     position: fixed;
     top: 0px;
-    padding-top: 10px;
-    background-color: #202122;
+    left: 0px;
+    padding: 10px 0px;
+    background-color: #000000;
     width: 100%;
 
     z-index: 999;
@@ -12,9 +13,15 @@ header{
     display: flex;
     align-items: center;
     padding: 0rem;
+    padding-right: 10px;
+    margin: 0rem;
     height: 50px;
 
     justify-content: space-between;
+}
+
+.Title{
+    text-transform: uppercase;
 }
 
 .header-child-text{
@@ -23,7 +30,8 @@ header{
     font-weight: bold;
     text-transform: uppercase;
 
-    margin-left: 20px;
+    padding-left: 20px;
+    color: #FFFFFF;
 }
 
 .header-child-list{
@@ -39,10 +47,14 @@ header{
 
 body{
     margin-top: 95px;
-    background-color: #202122;
-    color: #FFFFFF;
+    background-color: #ffffff;
+    color: #000000;
     
     font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-size: 20px;
 }
 
 .container{
@@ -54,17 +66,14 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 
     display: inline;
-
-    margin: 10px;
 }
 
 .navigation-list{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    font-weight: bold;
+    
     text-transform: uppercase;
 
-    padding: 0;
+    padding: 0px;
     list-style: none;
 
     text-align: right;
@@ -74,18 +83,26 @@ body{
 
 .nav-button{
     text-decoration: none;
+    font-weight:lighter;
+    font-size: 30px;
+
     color: #FFFFFF;
+
+    padding: 10px;
 }
 
 .nav-button-current{
     text-decoration: underline;
-    text-decoration-thickness: 5px;
-    color: #ff0000;
+    text-decoration-thickness: 7px;
+    font-weight: bolder;
+    font-size: 35px;
+    color: #ffffff;
+
+    padding: 10px;
 }
 
 .nav-button:hover{
-    text-decoration: none;
-    color: #ff8b8b;
+    font-size: 35px;
 }
 
 .show-side-bar-button{
@@ -96,7 +113,7 @@ body{
     display: none;
 }
 
-.side-bar-navigation-list{
+.side-bar-list{
     position: fixed;
     display: none;
     flex-direction: column;
@@ -110,14 +127,10 @@ body{
     list-style: none;
 
     padding-top: 40px;
-    background-color: #202122;
+    background-color: #000000;
 }
 
-.navigation-item-side{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-@media only screen and (max-width: 1105px) {
+@media only screen and (max-width: 1140px) {
     .show-side-bar-button{
         display: flex;
     }
